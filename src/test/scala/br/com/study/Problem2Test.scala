@@ -12,7 +12,12 @@ import org.junit.Test
 class Problem2Test {
 
   @Test
-  def execute10(): Unit = {
-    assertEquals(4613732, Problem2.execute())
+  def executeLessThen10(): Unit = {
+    assertEquals(10, Problem2.execute(10))
+  }
+
+  @Test
+  def executeLessThen4Million(): Unit = {
+    assertEquals(4613732, Problem2.execute(4000000))
   }
 }
